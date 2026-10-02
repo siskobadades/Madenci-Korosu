@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zonguldak Madenci Korosu | Yer Altından Sahnelere</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-color: #d4a373; /* Kömür ateşinin / madenci lambasının sıcak sarısı */
+            --text-main: #f4f4f4;
+            --text-muted: #aaa;
+            --border-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #121212;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #bc8a5f;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--accent-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 15px auto 0 auto;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 35px 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .story-container {
+            background: linear-gradient(135deg, #1a1a1a, #242424);
+            border-radius: 12px;
+            padding: 50px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .story-container p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0a0a0a;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            header p { font-size: 1rem; }
+            .story-container { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zonguldak Madenci Korosu</h1>
+        <p>Yerin yüzlerce metre altından yükselen kazma seslerini, zihne kazınan türkülere ve kardeşliğin sesine dönüştüren efsanevi topluluk.</p>
+        <a href="#hikaye" class="btn">Hikayemizi Keşfet</a>
+    </header>
+
+    <section id="hikaye">
+        <h2 class="section-title">Kömür Karasından Sahnelere</h2>
+        <div class="story-container">
+            <p>Zonguldak denince akla ilk gelen şey sırtımızdaki o kömür küfesi, karanlık ocaklar ve asırlık madencilik kültürünün getirdiği o ağır ama onurlu direniştir. İşte bu koronun arkasındaki en büyük güç; o karanlık galerilerde güneşin rengini özleyen ama yüreğindeki türkü ateşini hiç söndürmeyen madencilerdir.</p>
+            <p>Gündüzleri kazma sallayıp kömür kazan bu kocaman yürekli insanlar, mesai bitiminde ellerindeki nasırı gizlemeden mikrofonun başına geçiyorlar. Söyledikleri her türkü, sadece bir sanat faaliyeti değil; bu şehrin, emeğin, acının ve dayanışmanın en yalın manifestosudur.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Koronun Özü</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Gerçek Emek</h3>
+                <p>Sahneye çıkan her bir ses, yer altındaki zorlu mesainin, alın terinin ve gerçek hayatın ta kendisidir. Hiçbir süsleme barındırmaz, tamamen saf ve gerçektir.</p>
+            </div>
+            <div class="card">
+                <h3>Kültürel Miras</h3>
+                <p>Zonguldak'ın kömür kokulu tarihini, türkülerle, buralara ait ezgilerle gelecek nesillere aktaran yaşayan bir müze ve nefes alan bir antolojidir.</p>
+            </div>
+            <div class="card">
+                <h3>Kardeşlik ve Birlik</h3>
+                <p>Ocakta birbirine can emanet eden madenciler, aynı uyumla ve omuz omuza bu kez ezgileri harmanlıyor. Burası bir korodan öte, büyük bir aile.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Zonguldak Madenci Korosu | Tüm hakları emeğe saygı duyularak saklıdır.</p>
+    </footer>
+
+</body>
+</html>
